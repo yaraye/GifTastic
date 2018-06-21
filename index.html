@@ -10,11 +10,21 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script> 
 </head>
 <body>
-   <button data-search="Birds">Birds</button>
-   <button data-search="cats">Cats</button>
-
-
-   <div id="img"></div>
+    <div class="container">
+            <div id="button"></div>
+            <button id="buttonAdded"></button>
+        
+           <form id="search-form">
+            <label for="search-input">Add in your search!</label><br>
+            <br>
+            <input type="text" id="search-input">
+            <br>
+            <input id="select-search" type="submit" value="submit">
+          </form>
+          <div id="search"></div> 
+          
+    </div>
+   
 
     <script text="text/javascript" src="assets/javascript/app.js"></script>
 </body>

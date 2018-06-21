@@ -1,0 +1,40 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button#buttonAdded{
+    margin-top:5%;
+    background: none;
+    border:none;
+}
+button.button-clicked,
+input#select-search{
+    background-color: #4aaa;
+    width: 100px;
+    font-size: 20px;
+    color:#ffff;
+    padding: 5px;
+    margin: 10px 40px 10px 0px;
+    border: 1px solid #1d3c6a; 
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input#search-input{
+    width: 170px;
+    padding:8px;
+    background: #ffff;
+    border: 1px solid #1d3c6a;
+}
+
+#search-form{
+    position: relative;
+    float: right;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+img.anImg{
+    width: 300px;
+    height: 250px;
+}
+p{
+    padding: 10px;
+}
