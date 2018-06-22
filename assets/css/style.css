@@ -1,5 +1,27 @@
+h1{
+    font-size: 150px;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+/* .container{
+    background-image: url('../images/dnah1.jpn.jpeg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 100%;
+} */
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('../images/dna.jpn.png');
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+label{
+    font-size: 30px;
+    font-family: cursive;
+    font:bolder;
 }
 button#buttonAdded{
     margin-top:5%;
@@ -8,10 +30,11 @@ button#buttonAdded{
 }
 button.button-clicked,
 input#select-search{
-    background-color: #4aaa;
+    font: bold;
+    /* background-color: rgba(143, 170, 68, 0.667); */
     width: 100px;
     font-size: 20px;
-    color:#ffff;
+    color:black;
     padding: 5px;
     margin: 10px 40px 10px 0px;
     border: 1px solid #1d3c6a; 
@@ -19,10 +42,11 @@ input#select-search{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 input#search-input{
-    width: 170px;
+    width: 230px;
     padding:8px;
     background: #ffff;
     border: 1px solid #1d3c6a;
+    
 }
 
 #search-form{

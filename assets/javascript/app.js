@@ -1,7 +1,9 @@
 $(function(){
   populate(topics,"button-clicked","#buttonAdded");
+
+  localStorage.clear();
 })
-var topics=["funny dogs","animal","planets"];
+var topics=["Biology","Chemistry","Physics"];
 function populate(topics,classToadd, areaToadd){
   $(areaToadd).empty();
   for (var i=0; i<topics.length; i++){
@@ -46,6 +48,7 @@ $.ajax({
 
        $('#search').prepend(images);
 
+       
    }
 
   })
@@ -56,24 +59,34 @@ $.ajax({
 
 $(document).on('click','img',function(){
   var state =$(this).attr('data-state');
- 
+ console.log(state);
   if (state=='still'){
-    $(this).attr("scr",$(this).data("animate"));
+    $(this).attr("src",$(this).data("animate"));
     $(this).attr('data-state','animate');
   }else{
       (state=='animate')
-      $(this).attr("scr",$(this).data('still'));
+      $(this).attr("src",$(this).data('still'));
       $(this).attr('data-state','still');
   }
 })
 
 //search Box to add new items
-$('#select-search').on('click', function(){
-  var newSearch= $('input').eq(0).val();
+$('#select-search').on('click', function(event){
+  event.preventDefault();
   //eq(0)--grab whatever is the first input and  store within the text box
+  var newSearch= $('input').eq(0).val();
+
+   // Store the input into localStorage using "localStorage.setItem"
+  localStorage.setItem("input",newSearch);
+
+   // And display that input for the user using "localStorage.getItem"
+   $("#search").text(localStorage.getItem("input"));
+
   topics.push(newSearch);
   populate(topics,"button-clicked","#buttonAdded");
   //to prevent reload of the page
   return false;
-
 })
+// By default (upon load) show the input stored in localStorage using "localStorage.getItem"
+$("#search").text(localStorage.getItem("input"));
+
