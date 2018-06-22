@@ -16,7 +16,7 @@ body{
     background-image: url('../images/dna.jpn.png');
     height: 100%; 
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: repeat; 
 }
 label{
     font-size: 30px;
@@ -29,6 +29,7 @@ button#buttonAdded{
     border:none;
 }
 button.button-clicked,
+p,
 input#select-search{
     font: bold;
     /* background-color: rgba(143, 170, 68, 0.667); */
@@ -40,6 +41,7 @@ input#select-search{
     border: 1px solid #1d3c6a; 
     border-radius: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffff;
 }
 input#search-input{
     width: 230px;

@@ -77,10 +77,10 @@ $('#select-search').on('click', function(event){
   var newSearch= $('input').eq(0).val();
 
    // Store the input into localStorage using "localStorage.setItem"
-  localStorage.setItem("input",newSearch);
+  //localStorage.setItem("input",newSearch);
 
    // And display that input for the user using "localStorage.getItem"
-   $("#search").text(localStorage.getItem("input"));
+   //$("#search").text(localStorage.getItem("input"));
 
   topics.push(newSearch);
   populate(topics,"button-clicked","#buttonAdded");
@@ -88,5 +88,5 @@ $('#select-search').on('click', function(event){
   return false;
 })
 // By default (upon load) show the input stored in localStorage using "localStorage.getItem"
-$("#search").text(localStorage.getItem("input"));
+//$("#search").text(localStorage.getItem("input"));
 
